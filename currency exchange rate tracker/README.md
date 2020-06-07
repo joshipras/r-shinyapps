@@ -16,8 +16,8 @@ The app can be viewed here:
 https://prasannajoshi.shinyapps.io/currency-exchange-rate-tracker2/
 
 
-## Notes
+## TODO:
 
-- Email notifications upon convergence and divergence of moving averages will be tested.
+* [ ] Email notifications upon convergence.
 
 
