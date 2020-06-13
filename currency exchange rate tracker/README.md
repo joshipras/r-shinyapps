@@ -16,8 +16,5 @@ The app can be viewed here:
 https://prasannajoshi.shinyapps.io/currency-exchange-rate-tracker2/
 
 
-## TODO:
-
-* [ ] Email notifications upon convergence.
 
 
