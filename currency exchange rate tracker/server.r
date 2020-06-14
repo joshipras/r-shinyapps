@@ -13,8 +13,7 @@ library(shinytoastr)
 # setwd("~/Documents/extras/github-projects/useful shiny applications/currency exchange rate tracker/currency-exchange-rate-tracker2")
 
 shinyServer(function(input, output) {
-  #toastr_success("Application Started")
-  
+
   output$maPlot <- renderPlot({
     
     currencies <- paste0("USD/",input$currency)
