@@ -5,9 +5,15 @@ library(ggplot2)
 library(quantmod)
 library(curl)
 library(rsconnect)
-library(shinytoastr)
 
-# 
+#install.packages("dplyr")
+##install.packages("shiny")
+#install.packages("data.table")
+#install.packages("ggplot2")
+#install.packages("curl")
+
+#install.packages("devtools")
+
 # source("http://bioconductor.org/biocLite.R")
 # devtools::install_github("joshuaulrich/quantmod@144_getFX")
 # setwd("~/Documents/extras/github-projects/useful shiny applications/currency exchange rate tracker/currency-exchange-rate-tracker2")
@@ -74,15 +80,15 @@ shinyServer(function(input, output) {
     
     # If crossover occured, print conclusion
     if(y_30d < y_60d && t_30d >= t_60d){
-      output$conclusion <- renderUI({"<b>Cross-Over occurred, upside momentum is increasing</b>"})
+      output$conclusion <- renderUI({"Cross-Over occurred, upside momentum is increasing"})
       } 
     
     if(y_30d < y_90d && t_30d >= t_90d){
-      output$conclusion <- renderUI({print("<b>Cross-Over occurred, upside momentum is increasing</b>")})
+      output$conclusion <- renderUI({print("Cross-Over occurred, upside momentum is increasing")})
       } 
     
     if(y_60d < y_90d && t_60d >= t_90d){
-      output$conclusion <- renderUI({HTML("<b>Cross-Over occurred, upside momentum is increasing</b>")})
+      output$conclusion <- renderUI({HTML("Cross-Over occurred, upside momentum is increasing")})
       } 
     
     })
